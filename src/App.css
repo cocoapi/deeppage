@@ -10,6 +10,8 @@ header{
 
 div{
   /* border: 1px solid black; */
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
 footer{
@@ -20,6 +22,23 @@ nav{
   border-left: 1px solid #cacaca;
 }
 
+.items{
+  cursor: pointer;
+  border-bottom: 1px solid #cacaca;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;  
+  padding: 4px;
+}
+
+article{
+  width: 58vw;
+  min-height: 80vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .left_menu_bar{
   z-index: 10;
   border-right: 1px solid #cacaca;
@@ -28,4 +47,157 @@ nav{
 .sticky{
   position: sticky;
   position: -webkit-sticky;
+}
+
+
+.submenu{
+  z-index: 10;
+  overflow: hidden;
+}
+
+.submenu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #DDDDDD;
+}
+
+.submenu ul li{
+  display: block;
+  border-top: 1px solid #DDDDDD;
+  box-sizing: 'border-box';
+}
+
+.submenu ul li:first-child{
+  border: none
+}
+
+.fold{
+  overflow: hidden;
+}
+
+.fold:hover{
+  overflow: visible;
+  z-index: 10;
+}
+
+.fold:hover .submenu_1{
+  animation-name: foldAnimation_1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fold:hover .submenu_2{
+  animation-name: foldAnimation_2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fold:hover .submenu_3{
+  animation-name: foldAnimation_3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fold:hover .submenu_4{
+  animation-name: foldAnimation_4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fold:hover .submenu_5{
+  animation-name: foldAnimation_5;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fold:hover .submenu_6{
+  animation-name: foldAnimation_6;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes foldAnimation_1{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 5vh;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+@keyframes foldAnimation_2{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 9vh;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+@keyframes foldAnimation_3{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 13vh;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+@keyframes foldAnimation_4{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 17vh;
+  }
+  50%{
+    opacity: 1;
+  }
+}
+
+@keyframes foldAnimation_5{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 21vh;
+  }
+  50%{
+    opacity: 1;
+ 
+  }
+}
+
+@keyframes foldAnimation_6{
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to{
+    opacity: 1;
+    height: 25vh;
+  }
+  50%{
+    opacity: 1;
+  }
 }

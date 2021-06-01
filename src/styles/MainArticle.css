@@ -1,0 +1,23 @@
+.articleWrapper{
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	height: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.articleWrapper .title{
+  text-align: left;
+  background-color: #dadada;
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  justify-content: space-between;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.articleWrapper .articleBody{
+	text-align: left;
+}

@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/MainArticle.css';
 
 const InnerArticle = (props) => {
   return(
-    <div>
+    <div className="articleBody">
       { props.content }
     </div>
   );

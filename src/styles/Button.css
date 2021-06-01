@@ -1,0 +1,43 @@
+.buttonWrapper{
+    background-color: #428036;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+    box-sizing: content-box;
+}
+
+.buttonWrapper:hover{
+    animation-name: mouseHover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mouseHover {
+    from {background-color: #428036; }
+    to{ background-color: #36CC18; }
+}
+
+.textbuttonWrapper{
+    cursor: pointer;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.textButtonWrapper:hover{
+    animation-name: mouseHoverTB;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mouseHoverTB{
+    from { color: #000000; }
+    to{ color: #428036; }
+}
